@@ -21,7 +21,7 @@ def main():
                 print('IP : %s  port %s is open' % (ip , port))
             s.close()
     else :
-        tmp = [20,21,22,23,53,80,161,162,443,1234,3389,8080,8086,8888]
+        tmp = [20,21,22,23,53,80,139,445,161,162,443,3389,8080,8086,8888]
         for port in tmp :
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
             s.settimeout(0.5)
